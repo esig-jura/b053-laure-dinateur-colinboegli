@@ -23,10 +23,13 @@ a {
 }
 
 a:hover {
-    color: darkmagenta;
+    text-decoration: underline;
 }
 
-h1,
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
 h2,
 h3,{
     font-family: ´Changa One´, sans-serif;
