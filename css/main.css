@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-display: swap;
+    font-family: ´´
+}
 body {
     font-family: ´Open Sans´, Arial, sans-serif;
     font-weight: 400;
@@ -9,6 +13,7 @@ body {
     line-height: 1.4;
     color: #011627;
     background-color: #fdfffc;
+    margin: 0;
 }
 
 img {
@@ -26,12 +31,119 @@ a:hover {
     text-decoration: underline;
 }
 
+li{
+    font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
+    font-size: 100%;
+    color: black;
+    list-style-type: none;
+    background-image: url(phone.png);
+    background-repeat: no-repeat;
+    background-position: 0% 65%;
+    padding-left: 15px;
+}
+
 h1 {
     font-size: 1.5rem;
     margin-bottom: 1em;
 }
-h2,
-h3,{
+h2{
+    font-size: 1.5rem;
+    margin-bottom:75em;
+}
+h3{
     font-family: ´Changa One´, sans-serif;
     font-weight: 400;
+}
+p {
+    line-height: 1.5;
+}
+
+/************************************
+Entête de page
+ ***********************************/
+header {
+    background-color: #011627;
+    padding: 5px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+header .nom,
+header .metier{
+    color:#2ec4b6;
+    font-family: "Change One", cursive;
+    font-weight: 400;
+    font-size: 1.75em;
+}
+
+header .metier{
+    font-size: 1em;
+    color: #e71d36;
+}
+
+header nav ul{
+    list-style-type:none;
+    padding: 0;
+    display: flex;
+    gap: 1.5em;
+    justify-content: center;
+}
+
+header nav a{
+    font-weight: bold;
+    color: #fdfffc;
+    padding: 1em 0;
+}
+
+header nav a:hover,
+header nav a.actif {
+    color: #2ec4b6;
+}
+
+header nav li:first-of-type {
+    display: none;
+}
+
+/************************************
+Pied de page
+ ***********************************/
+
+footer {
+    text-align: center;
+    padding-top: 50px;
+}
+
+footer ul {
+    list-style-type:none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+footer ul img {
+    width: 50px;
+    filter: grayscale(1);
+    transition: all 700ms;
+}
+
+footer ul img:hover {
+    filter: grayscale(0);
+}
+
+/************************************
+Page qui suis-je ?
+ ***********************************/
+
+.page-infos h1 {
+    text-align: center;
+}
+
+.page-infos .photo {
+    text-align: center;
+}
+
+.page-infos img {
+    max-width: 250px;
+    border-radius: 50%;
 }
